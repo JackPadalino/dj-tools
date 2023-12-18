@@ -37,8 +37,9 @@ struct PitchFinder: View {
     
     var body: some View {
         ZStack {
-            Color.init(red: 1.0, green: 0.7529411764705882, blue: 0.0).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            Color.init(red: 0.0, green: 0.0, blue: 0.0).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack {
+                Spacer()
                 TextField("Range", text: $pitchManager.range)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .keyboardType(.numberPad)
@@ -57,12 +58,13 @@ struct PitchFinder: View {
                 Button("Submit") {
                     pitchManager.getPitch()
                 }
-                .buttonStyle(CustomButtonStyle(cornerRadius: 5, backgroundColor: Color.blue))
+                .buttonStyle(CustomButtonStyle(cornerRadius: 5, backgroundColor: Color.black))
                 .padding()
                 
                 
                 Text("\(pitchManager.pitchFinal)")
                     .opacity(pitchManager.pitchFinal == "Final Pitch" ? 0 : 1)
+                    .foregroundColor(.white)
                     .font(.system(size: 75))
                 //                .padding()
                 
@@ -74,9 +76,11 @@ struct PitchFinder: View {
                     .onTapGesture {
                         pitchManager.reset()
                     }
+                Spacer()
                 
             }
             .padding()
+            .ignoresSafeArea(.keyboard, edges: .bottom)
         }
 
     }
