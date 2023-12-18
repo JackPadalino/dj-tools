@@ -9,20 +9,20 @@
 /* Begin PBXBuildFile section */
 		1B3FAE422B30B78800845004 /* DJ_ToolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3FAE412B30B78800845004 /* DJ_ToolsApp.swift */; };
 		1B3FAE442B30B78800845004 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3FAE432B30B78800845004 /* Home.swift */; };
-		1B3FAE462B30B78900845004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3FAE452B30B78900845004 /* Assets.xcassets */; };
 		1B3FAE492B30B78900845004 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3FAE482B30B78900845004 /* Preview Assets.xcassets */; };
 		1B3FAE522B30B81400845004 /* BpmFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3FAE512B30B81400845004 /* BpmFinder.swift */; };
 		1B3FAE542B30B92400845004 /* PitchFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3FAE532B30B92400845004 /* PitchFinder.swift */; };
+		1B3FAE562B30E65100845004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3FAE552B30E65100845004 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B3FAE3E2B30B78800845004 /* DJ Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DJ Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3FAE412B30B78800845004 /* DJ_ToolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJ_ToolsApp.swift; sourceTree = "<group>"; };
 		1B3FAE432B30B78800845004 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		1B3FAE452B30B78900845004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B3FAE482B30B78900845004 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B3FAE512B30B81400845004 /* BpmFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmFinder.swift; sourceTree = "<group>"; };
 		1B3FAE532B30B92400845004 /* PitchFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchFinder.swift; sourceTree = "<group>"; };
+		1B3FAE552B30E65100845004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 				1B3FAE412B30B78800845004 /* DJ_ToolsApp.swift */,
 				1B3FAE432B30B78800845004 /* Home.swift */,
 				1B3FAE512B30B81400845004 /* BpmFinder.swift */,
+				1B3FAE552B30E65100845004 /* Assets.xcassets */,
 				1B3FAE532B30B92400845004 /* PitchFinder.swift */,
-				1B3FAE452B30B78900845004 /* Assets.xcassets */,
 				1B3FAE472B30B78900845004 /* Preview Content */,
 			);
 			path = "DJ Tools";
@@ -131,8 +131,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3FAE562B30E65100845004 /* Assets.xcassets in Resources */,
 				1B3FAE492B30B78900845004 /* Preview Assets.xcassets in Resources */,
-				1B3FAE462B30B78900845004 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +277,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DJ Tools/Preview Content\"";
@@ -288,6 +289,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +308,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DJ Tools/Preview Content\"";
@@ -317,6 +320,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

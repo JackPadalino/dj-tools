@@ -13,11 +13,11 @@ class PitchManager: ObservableObject {
            startingBpmInt != 0 {
             let result = Double(targetBpmInt - startingBpmInt) / (Double(startingBpmInt) * (Double(rangeInt) / 1000))
             pitchFinal = String(format: "%.2f", result)
+            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
         } else {
             // Handle cases where conversion fails or startingBpmInt is 0
             pitchFinal = "Error"
         }
-        print(pitchFinal)
 
     }
 
