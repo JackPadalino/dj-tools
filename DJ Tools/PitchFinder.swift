@@ -25,13 +25,15 @@ class PitchManager: ObservableObject {
         range = ""
         startingBpm = ""
         targetBpm = ""
-        pitchFinal = ""
+        pitchFinal = "Final Pitch"
 
     }
 }
 
 struct PitchFinder: View {
     @StateObject var pitchManager = PitchManager()
+    
+
     
     var body: some View {
         ZStack {
@@ -50,17 +52,28 @@ struct PitchFinder: View {
                 TextField("Target BPM", text: $pitchManager.targetBpm)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .keyboardType(.numberPad)
-                //                .padding()
+//                                .padding()
                 
                 Button("Submit") {
                     pitchManager.getPitch()
                 }
+                .buttonStyle(CustomButtonStyle(cornerRadius: 5, backgroundColor: Color.blue))
                 .padding()
+                
                 
                 Text("\(pitchManager.pitchFinal)")
                     .opacity(pitchManager.pitchFinal == "Final Pitch" ? 0 : 1)
                     .font(.system(size: 75))
                 //                .padding()
+                
+                Text("Reset")
+                    .bold()
+                    .opacity(pitchManager.pitchFinal == "Final Pitch" ? 0 : 1)
+                    .padding()
+                    .foregroundColor(.white)
+                    .onTapGesture {
+                        pitchManager.reset()
+                    }
                 
             }
             .padding()
