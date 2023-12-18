@@ -11,7 +11,7 @@ import SwiftUI
 struct DJ_ToolsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Home()
         }
     }
 }

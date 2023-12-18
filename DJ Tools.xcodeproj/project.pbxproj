@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		1B3FAE422B30B78800845004 /* DJ_ToolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3FAE412B30B78800845004 /* DJ_ToolsApp.swift */; };
-		1B3FAE442B30B78800845004 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3FAE432B30B78800845004 /* ContentView.swift */; };
+		1B3FAE442B30B78800845004 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3FAE432B30B78800845004 /* Home.swift */; };
 		1B3FAE462B30B78900845004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3FAE452B30B78900845004 /* Assets.xcassets */; };
 		1B3FAE492B30B78900845004 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3FAE482B30B78900845004 /* Preview Assets.xcassets */; };
+		1B3FAE522B30B81400845004 /* BpmFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3FAE512B30B81400845004 /* BpmFinder.swift */; };
+		1B3FAE542B30B92400845004 /* PitchFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3FAE532B30B92400845004 /* PitchFinder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B3FAE3E2B30B78800845004 /* DJ Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DJ Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3FAE412B30B78800845004 /* DJ_ToolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJ_ToolsApp.swift; sourceTree = "<group>"; };
-		1B3FAE432B30B78800845004 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1B3FAE432B30B78800845004 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		1B3FAE452B30B78900845004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B3FAE482B30B78900845004 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1B3FAE512B30B81400845004 /* BpmFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpmFinder.swift; sourceTree = "<group>"; };
+		1B3FAE532B30B92400845004 /* PitchFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchFinder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				1B3FAE412B30B78800845004 /* DJ_ToolsApp.swift */,
-				1B3FAE432B30B78800845004 /* ContentView.swift */,
+				1B3FAE432B30B78800845004 /* Home.swift */,
+				1B3FAE512B30B81400845004 /* BpmFinder.swift */,
+				1B3FAE532B30B92400845004 /* PitchFinder.swift */,
 				1B3FAE452B30B78900845004 /* Assets.xcassets */,
 				1B3FAE472B30B78900845004 /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B3FAE442B30B78800845004 /* ContentView.swift in Sources */,
+				1B3FAE542B30B92400845004 /* PitchFinder.swift in Sources */,
+				1B3FAE442B30B78800845004 /* Home.swift in Sources */,
 				1B3FAE422B30B78800845004 /* DJ_ToolsApp.swift in Sources */,
+				1B3FAE522B30B81400845004 /* BpmFinder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
