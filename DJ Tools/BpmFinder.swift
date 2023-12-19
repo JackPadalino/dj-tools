@@ -41,34 +41,31 @@ struct BpmFinder: View {
 
     var body: some View {
         ZStack {
-            Color.init(red: 1.0, green: 0.7529411764705882, blue: 0.0).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            Color.init(red: 0.0, green: 0.0, blue: 0.0).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack {
-                Image("vinyl")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 300)
-                    .onTapGesture {
-                        bpmManager.getBPM()
-                    }
-                Text("Tap the record for BPM")
+                Spacer()
+                Text("Tap the screen for BPM")
                     .bold()
+                    .foregroundColor(.white)
                     .padding()
                 Text("\(bpmManager.bpmFinal)")
+                    .foregroundColor(.white)
                     .opacity(bpmManager.bpmFinal == 0 ? 0 : 1)
                     .font(.system(size: 75))
-                    .padding()
+                Spacer()
                 Text("Reset")
                     .bold()
-                    .opacity(bpmManager.bpmFinal == 0 ? 0 : 1)
                     .padding()
+                    .opacity(bpmManager.bpmFinal == 0 ? 0 : 1)
                     .foregroundColor(.white)
                     .onTapGesture {
                         bpmManager.reset()
                     }
-                    
-                    
-                
             }
+            .padding()
+        }
+        .onTapGesture {
+            bpmManager.getBPM()
         }
     }
 }
