@@ -17,7 +17,7 @@ class PitchManager: ObservableObject {
             UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
         } else {
             // Handle cases where conversion fails or startingBpmInt is 0
-            pitchFinal = "Error"
+            pitchFinal = "X_X"
         }
     }
 
